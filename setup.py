@@ -1,6 +1,7 @@
 from setuptools import setup
 
-from dune_analytics_api import __version__
+with open('dune_analytics_api/version.py') as f:
+    __version__ = f.read().split("=", 1)[1].strip()
 
 
 setup(
